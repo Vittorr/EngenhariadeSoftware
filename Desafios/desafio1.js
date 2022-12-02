@@ -36,7 +36,6 @@ class Library {
     getBookById(id) {
         for (let i = 0; i < this.books.length; i++) {
             if (this.books[i]['id'] === id) {
-                console.log(this.books[i])
                 return this.books[i]
             }
         }
@@ -57,12 +56,10 @@ class Library {
 
 const p1 = new Library()
 
-p1.addBook(['haha', 'olaa', 'vitor'], 123)
-p1.addBook(['haha', 'olaa', 'vitor'], 453)
-p1.addBook(['haha', 'olaa', 'vitor'], 321)
+p1.addBook(['haha', 'olaa', 'vitor'], '123')
+p1.addBook(['haha', 'olaa', 'vitor'], '453')
+p1.addBook(['haha', 'olaa', 'vitor'], '321')
 
-p1.updateBookById(123, ['O amanhecer', 'Fala sobre o Sol', 'Jonas'])
-
-console.log()
+p1.updateBookById('123', ['O amanhecer', 'Fala sobre o Sol', 'Jonas'])
 
 console.log(p1.getBooks())
