@@ -20,7 +20,6 @@ class Library {
     }
 
     getBooks() {
-        console.log(this.books)
         return this.books
     }
 
@@ -50,7 +49,6 @@ class Library {
                 this.books[i]['description'] = info[1];
                 this.books[i]['author'] = info[2];
 
-                console.log(this.books[i])
                 return this.books[i]
             }
         }
@@ -67,4 +65,4 @@ p1.updateBookById(123, ['O amanhecer', 'Fala sobre o Sol', 'Jonas'])
 
 console.log()
 
-p1.getBooks()
+console.log(p1.getBooks())
