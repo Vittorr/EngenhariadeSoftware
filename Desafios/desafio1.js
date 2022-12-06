@@ -3,8 +3,7 @@ class Book {
         this.title = title;
         this.description = description;
         this.author = author;
-        // this.id = String(parseInt(Math.random() * 100000))
-        this.id = String(description.length + 3)
+        this.id = String(description.length + title.length + author.length)
     }
 }
 
@@ -69,21 +68,23 @@ class Library {
     }
 }
 
-const p1 = new Library()
+// Casos de teste
 
-p1.addBook({title: 'Terra', description: 'Solo', author: 'Vitor'})
-p1.addBook({title: 'Sol', description: 'Chamas', author: 'João'})
-p1.addBook({title: 'Lua', description: 'Noite', author: 'Lucas'})
+// const p1 = new Library()
 
-console.log(p1.getBooks())
-console.log()
+// p1.addBook({title: 'Terra', description: 'Solo', author: 'Vitor'})
+// p1.addBook({title: 'Sol', description: 'Chamas', author: 'João'})
+// p1.addBook({title: 'Lua', description: 'Noite', author: 'Lucas Gabriel'})
 
-p1.removeBookById('7')
-p1.getBookById('7')
+// console.log(p1.getBooks())
+// console.log()
 
-console.log(p1.getBooks())
-console.log()
+// p1.removeBookById('7')
+// p1.getBookById('7')
 
-p1.updateBookById('8', {title: 'Terra', description: 'Solo', author: 'Vitor'})
+// console.log(p1.getBooks())
+// console.log()
 
-console.log(p1.getBooks())
+// p1.updateBookById('8', {title: 'Terra', description: 'Solo', author: 'Vitor'})
+
+// console.log(p1.getBooks())
